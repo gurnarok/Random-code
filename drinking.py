@@ -1,4 +1,7 @@
 #!/usr/bin/python
+# Free to use
+# Drinking game v0.1
+
 import random as ran
 a = 0;
 players = [];
