@@ -24,6 +24,7 @@
 
 import random as r
 GC = 0 # Guess count
+GCstr = ""
 minNum = 1
 maxNum = 20
 num = r.randint(minNum,maxNum)
@@ -38,11 +39,12 @@ while guess != num:
 			print "The number is between 1 and 20"
 		else:
 			GC+=1
+			GCstr = str(GC)
 			if guess<num:
-				print "The number is higher. Try number "+str(GC)
+				print "The number is higher. Try number "+GCstr
 			elif guess>num:
-				print "The number is lower. Try number "+str(GC)
+				print "The number is lower. Try number "+GCstr
 			else:
-				print "Ding ding ding! You guessed it! Nice work! You guesset it with "+str(GC)+" tryes!"
+				print "Ding ding ding! You guessed it! Nice work! You guesset it with "+GCstr+" tryes!"
 	except:
 		print "Come on, give me a number!"
